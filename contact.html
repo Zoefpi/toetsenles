@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Piano en Keyboard Les – Toetsenles voor Piano en Keyboardles in de
+      gemeente Beemster en Heerhugowaard
+    </title>
+    <link rel="icon" href="./images/Logo-image.webp" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section class="Navigation-Bar-Section">
+      <div class="Navigation-bar-container">
+        <div class="Navigation-Bar-logo-container">
+          <img src="./images/Logo-image.webp" alt="" />
+        </div>
+        <div class="Navigation-Bar-Buttons-container">
+          <a onclick="location.href = 'index.html'" class="NavBtnHome">
+            Home
+          </a>
+          <a onclick="location.href = 'docent.html'" class="NavBtnDocent">
+            Docent
+          </a>
+          <a onclick="location.href = 'Tarieven.html'" class="NavBtnTarieven">
+            Tarieven
+          </a>
+          <a
+            onclick="location.href = 'lesEnlocaties.html'"
+            class="NavBtnLocaties"
+          >
+            Les / Locaties
+          </a>
+          <a onclick="location.href = 'faq.html'" class="NavBtnFAQ"> FAQ </a>
+          <a
+            onclick="location.href = 'privacyverklaring.html'"
+            class="NavBtnPrivacy-verklaring"
+          >
+            Privacy verklaring
+          </a>
+        </div>
+        <div class="Navigation-Bar-Proefles-container">
+          <a href="./contact.html"
+            ><button class="Proefles-button">Proefles</button></a
+          >
+        </div>
+      </div>
+    </section>
+
+    <div class="piano-contact-page">
+      <h1>Contact</h1>
+
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Naam" required />
+
+        <input type="text" name="plaats" placeholder="Woonplaats" required />
+
+        <select name="locatie" required>
+          <option value="">Kies een locatie</option>
+          <option value="Heerhugowaard" class="option-button">
+            In Heerhugowaard
+          </option>
+          <option value="Middenbeemster" class="option-button">
+            In Middenbeemster
+          </option>
+        </select>
+
+        <input type="number" name="leeftijd" placeholder="Leeftijd" required />
+
+        <input type="email" name="email" placeholder="E-mailadres" required />
+
+        <textarea
+          name="message"
+          placeholder="Vertel iets over jezelf of stel een vraag"
+        ></textarea>
+
+        <button type="submit">Vraag een proefles aan</button>
+      </form>
+
+      <div id="success-message" class="success-message">
+        🎉 Je aanvraag is verzonden! Ik neem snel contact met je op.
+      </div>
+
+      <p>
+        Het kan zijn dat de mail in mijn spambox komt, de mail zal ik binnen 2
+        werkdagen beantwoorden.
+      </p>
+      <p>U kunt ook mailen naar: toetsenles1@gmail.com</p>
+    </div>
+
+    <section class="Footer-section">
+      <div class="footer-content-container">
+        <p>&copy; created by Justin Zweekhorst</p>
+        <img class="Footer-image" src="./images/Logo-image.webp" alt="" />
+        <p><span id="year"></span></p>
+      </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
