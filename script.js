@@ -1,5 +1,3 @@
-alert("script loaded")
-
 const cards = document.querySelectorAll(".info-content-container");
 
 const observer = new IntersectionObserver((entries) => {
