@@ -329,7 +329,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem 8rem 1rem 8rem;
+    padding: 1rem 2rem;
     background-color:#f7f7ff;
 }
 
@@ -370,18 +370,24 @@
 }
 
 .docent-description-container {
-    width: 50%;
+    width: min(800px, 95%);
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 10px;
+
     border: #000 solid 2px;
-    padding: 2rem 2rem;
+    padding: 2rem;
+
     border-radius: 20px;
     box-shadow: 6px 6px 0 #000;
     transition: 0.5s;
+
+    /* 🔥 FIX */
+    overflow-wrap: break-word;
+    word-break: break-word;
 }
 
 .docent-description-container:hover {
@@ -521,7 +527,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem 8rem 1rem 8rem;
+    padding: 1rem 2rem;
     background-color:#ffffff;
     gap: 2rem;
 }
@@ -529,6 +535,7 @@
 .locatie-HHW-content-container,
 .locatie-Beemster-content-container {
     width: 100%;
+    max-width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -538,8 +545,10 @@
 }
 
 .Locatie-HHW-image img {
-    height: 300px;
-    border-radius: 50px;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    object-fit: cover;
     transition: 0.5s ease-in-out;
 }
 
@@ -974,3 +983,247 @@
     }
 }
 
+/* =========================
+   TABLET (<= 1024px)
+========================= */
+@media (max-width: 1024px) {
+
+  .Navigation-bar-container {
+    padding: 0.5rem 1.5rem;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .Navigation-Bar-Buttons-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-section {
+    padding: 2rem 2rem 3rem 2rem;
+  }
+
+  .Hero-description-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .docent-description-container {
+    width: 80%;
+  }
+
+  .Tarieven-section {
+    padding: 2rem;
+  }
+
+  .Les-section {
+    padding: 2rem;
+  }
+
+  .Lesruimte-photos-section,
+  .Lesruimte-beemster-photos-section {
+    padding: 2rem;
+  }
+}
+
+
+/* =========================
+   MOBILE (<= 768px)
+========================= */
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  .Navigation-bar-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .Navigation-Bar-Buttons-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .NavBtnHome,
+  .NavBtnDocent,
+  .NavBtnTarieven,
+  .NavBtnLocaties,
+  .NavBtnFAQ,
+  .NavBtnPrivacy-verklaring {
+    font-size: 0.85rem;
+    padding: 0.3rem 1rem;
+  }
+
+  .Proefles-button {
+    padding: 0.5rem 1.2rem;
+  }
+
+  /* HERO */
+  .hero-section {
+    padding: 1.5rem 1rem 2rem 1rem;
+  }
+
+  .Hero-image {
+    width: 220px;
+    height: 220px;
+  }
+
+  .Hero-description-container p {
+    font-size: 1rem;
+  }
+
+  /* INFO */
+  .info-content-container {
+    padding: 2rem;
+  }
+
+  .Info-section,
+  .Info-section-alt {
+    padding: 2rem 1rem;
+  }
+
+  /* REVIEWS */
+  .Review-card {
+    width: 100%;
+  }
+
+  /* DOCENT */
+  .docent-profile-image img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .docent-description-container {
+    width: 95%;
+    padding: 1.5rem;
+  }
+
+  .docent-description-container {
+    width: 95%;
+    padding: 1.2rem;
+  }
+
+  /* TARIEVEN */
+  .Tarieven-section {
+    padding: 2rem 1rem;
+  }
+
+  .Tarieven-cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  /* LOCATIES */
+  .Lesruimte-photos-container {
+    grid-template-columns: 1fr;
+  }
+
+  .Locatie-HHW-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* LES */
+  .les-description-notes {
+    width: 100%;
+  }
+
+  /* FOOTER */
+  .footer-content-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE (<= 480px)
+========================= */
+@media (max-width: 480px) {
+
+  .Caption {
+    font-size: 2.5rem;
+  }
+
+  .Hero-Title h1 {
+    font-size: 1.4rem;
+  }
+
+  .Secondary-Hero-Title h2 {
+    font-size: 1rem;
+  }
+
+  .Hero-image {
+    width: 180px;
+    height: 180px;
+  }
+
+  .info-content-container h1 {
+    font-size: 1.3rem;
+  }
+
+  .Tarieven-card {
+    padding: 1.2rem;
+  }
+
+  .docent-title h1 {
+    font-size: 1.8rem;
+  }
+
+  .Navigation-Bar-logo-container img {
+    width: 60px;
+    height: 55px;
+  }
+}
+
+p, li {
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+@media (max-width: 768px) {
+    .docent-description-container {
+        width: 100%;
+        max-width: none;
+        padding: 1.2rem;
+    }
+
+    .docent-content-container {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .Locatie-HHW-image img {
+        width: 80vw;
+        max-width: 100vw;
+        border-radius: 50px;
+    }
+
+    .locatie-Heerhugowaard-Hero-section {
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .footer-content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content-container img {
+        order: 1;
+    }
+
+    .footer-content-container p:first-child {
+        order: 2;
+    }
+
+    .footer-content-container p:last-child {
+        order: 3;
+    }
+
+}
