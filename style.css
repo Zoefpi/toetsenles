@@ -993,16 +993,30 @@
   }
 
   .Navigation-bar-container {
-    padding: 0.5rem 1.5rem;
-    flex-wrap: wrap;
-    gap: 10px;
     flex-direction: column;
+    align-items: center;
+    gap: 1rem;
     align-items: center;
   }
 
   .Navigation-Bar-Buttons-container {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
+  }
+
+  .NavBtnHome,
+  .NavBtnDocent,
+  .NavBtnTarieven,
+  .NavBtnLocaties,
+  .NavBtnFAQ,
+  .NavBtnPrivacy-verklaring {
+    font-size: 0.85rem;
+    padding: 0.3rem 1rem;
+  }
+
+  .Proefles-button {
+    padding: 0.5rem 1.2rem;
   }
 
   .hero-section {
