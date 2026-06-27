@@ -566,6 +566,11 @@
     align-items: center;
 }
 
+.locatie-HHW-info-container p,
+.locatie-Beemster-info-container p{
+    text-align: center;
+}
+
 .Lesruimte-photos-section {
     width: 100%;
     height: auto;
