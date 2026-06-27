@@ -993,7 +993,7 @@
   }
 
   .Navigation-bar-container {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     gap: 1rem;
     align-items: center;
