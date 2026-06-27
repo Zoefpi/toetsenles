@@ -1053,6 +1053,10 @@
 @media (max-width: 768px) {
 
   /* NAVBAR */
+  .Navigation-Bar-Section {
+    position: static;
+  }
+
   .Navigation-bar-container {
     flex-direction: column;
     align-items: center;
